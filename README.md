@@ -4,9 +4,19 @@ ScrubbingSpeed.js is a variable scrubbing speed slider solution for web develope
 
 You can view an interactive sample and accompanying article at http://derekknox.com/articles/scrubbing-speed-js/#example-scrubbing-speed-js.
 
-
 ![Image](_assets/img/scrubbing-speed-sample.gif)
 
+##Code Example
+```html
+<div class="scrubbing-speed-wrapper ss-spacer">
+    <div class="scrubbing-speed-slider"
+        data-ss-name="my-slider"
+        data-ss-min="0"
+        data-ss-max="100000"
+        data-ss-color-fill="#AEEE00"
+        data-ss-color-empty="#666"></div>
+</div>
+```
 ```javascript
 ScrubbingSpeed.init('my-slider', function(args){ /* use the args here */ });
 ```
