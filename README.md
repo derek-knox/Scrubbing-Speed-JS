@@ -7,7 +7,9 @@ You can view an interactive sample and accompanying article at http://derekknox.
 
 ![Image](_assets/img/scrubbing-speed-sample.gif)
 
-'ScrubbingSpeed.init('example1', function(args){ /* use the args here */ });'
+```javascript
+ScrubbingSpeed.init('my-slider', function(args){ /* use the args here */ });
+```
 
 ##License
 	
