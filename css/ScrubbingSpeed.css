@@ -1,0 +1,148 @@
+
+/******************************************************************
+Overlays
+******************************************************************/
+
+#document-overlay, #speed-overlay {
+  position: absolute;
+  height: 100%;
+  background-color: transparent;
+  opacity: 0;
+  z-index: 9999;
+  
+  cursor: grabbing;
+  cursor: -webkit-grabbing; 
+  cursor: -moz-grabbing;
+
+  transition: opacity .4s ease-in-out;
+  -webkit-transition: opacity .4s ease-in-out;
+}
+
+#document-overlay {
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.speed-zone {
+  position: relative;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+  border: solid black;
+  border-width: 0 0 1px 0;
+
+  -webkit-border-image: 1 -webkit-linear-gradient(0, transparent, black, transparent);
+  border-image: 1 -webkit-linear-gradient(0, transparent, black, transparent);
+}
+
+.speed-label {
+  position: inherit;
+  display: inline-block;
+  font-size: 10pt;
+}
+
+.speed-zone:last-child {
+  border: none;
+}
+
+/******************************************************************
+Scrubber Components
+******************************************************************/
+
+.scrubbing-speed-wrapper {
+  position: relative;
+  display: flex;
+}
+
+.scrubbing-speed-slider {
+  width: 100%;
+  height: 50px;
+}
+
+.fill, .fill-track {
+  position: absolute;
+  margin: 20px 0;
+  height: 10px;
+  width: 0%;
+  border-radius: 10px;
+}
+
+.knob {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  margin-top: 5px;
+  border-radius: 50%;
+}
+
+.knob:hover {
+  cursor: grab;
+  cursor: -webkit-grab;
+  cursor: -moz-grab;
+}
+.knob:active {
+  cursor: grabbing;
+  cursor: -webkit-grabbing; 
+  cursor: -moz-grabbing; 
+}
+
+/******************************************************************
+Arrow
+******************************************************************/
+
+.arrow {
+  height: 50px;
+  position: relative;
+  top: 0px;
+  opacity: 1;
+
+  -ms-transform: scale(0.5, 0.5);
+  -webkit-transform: scale(0.5, 0.5);
+  transform: scale(0.5, 0.5);
+
+  transition: all .4s;
+  -webkit-transition: all .4s;
+}
+
+.arrow-move {
+  top: 30px;
+}
+
+.arrow:before, .arrow:after {
+  content: '';
+  position: absolute;
+  top: 0px;
+  width: 18px;
+  border: 2px solid;
+
+  transition: all .4s;
+  -webkit-transition: all .4s;
+}
+
+.arrow:before {
+  left: 0px;
+
+  transform: rotateZ(45deg);
+  -webkit-transform: rotateZ(45deg);
+}
+
+.arrow:after {
+  left: 13px;
+
+  transform: rotateZ(-45deg);
+  -webkit-transform: rotateZ(-45deg);
+}
+
+/******************************************************************
+Util
+******************************************************************/
+
+.no-select {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
