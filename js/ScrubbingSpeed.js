@@ -142,7 +142,7 @@ var ScrubbingSpeed = (function() {
     function updateHelpers(e) {
       
       //normalize event
-      e = SUPPORTS_TOUCH ? e.originalEvent.touches[0] : e;
+      e = SUPPORTS_TOUCH ? e.touches[0] : e;
       
       //event input related values
       var offsetX, offsetY,
@@ -152,7 +152,7 @@ var ScrubbingSpeed = (function() {
       //offsets
       var parentOffsetDiffX = $ss.getBoundingClientRect().left - $ss.parentNode.getBoundingClientRect().left; //scrubbing-speed-wrapper parent
       offsetX = $ss.getBoundingClientRect().left - parentOffsetDiffX - document.body.getBoundingClientRect().left;
-      offsetY = e.offsetY || e.layerY;
+      offsetY = e.offsetY || e.layerY || 0; //0 touch default
 
       //scrub offset x helper
       knobWidth = getComputedStyle($knob)['width'].replace('px', '');
@@ -307,7 +307,7 @@ var ScrubbingSpeed = (function() {
     function onMove(e) {
 
       //normalize event
-      e = SUPPORTS_TOUCH ? e.originalEvent.touches[0] : e;
+      e = SUPPORTS_TOUCH ? e.touches[0] : e;
       
       //pos
       prevPos = currPos ? { x: currPos.x, y: currPos.y } : origPos;
