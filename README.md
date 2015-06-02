@@ -1,6 +1,6 @@
 # Scrubbing-Speed-JS
 
-ScrubbingSpeed.js is a variable scrubbing speed slider solution for web developers.
+ScrubbingSpeed.js is a variable scrubbing speed slider solution for web developers. It has no dependencies.
 
 You can view an interactive sample and accompanying article at http://derekknox.com/articles/scrubbing-speed-js/#example-scrubbing-speed-js.
 
