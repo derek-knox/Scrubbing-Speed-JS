@@ -18,7 +18,15 @@ You can view an interactive sample and accompanying article at http://derekknox.
 </div>
 ```
 ```javascript
-ScrubbingSpeed.init('my-slider', function(args){ /* use the args here */ });
+ScrubbingSpeed.init('my-slider', function(args){ 
+	/* use the args props here to update the UI, jump to video/audio, etc. */
+	console.log(args.min);
+	console.log(args.current);
+	console.log(args.max);
+	console.log(args.speed);
+	console.log(args.percentX);
+	console.log(args.percentY);
+});
 ```
 
 ##License
