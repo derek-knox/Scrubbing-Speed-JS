@@ -4,7 +4,7 @@ ScrubbingSpeed.js is a variable scrubbing speed slider solution for web develope
 
 You can view an interactive sample and accompanying article at http://derekknox.com/articles/scrubbing-speed-js/#example-scrubbing-speed-js.
 
-![Image](_assets/images/scrubbing-speed-sample.gif)
+![Image](_assets/img/scrubbing-speed-sample.gif)
 
 ##License
 	
