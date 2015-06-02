@@ -19,13 +19,12 @@ You can view an interactive sample and accompanying article at http://derekknox.
 ```
 ```javascript
 ScrubbingSpeed.init('my-slider', function(args){ 
-	/* use the args props here to update the UI, jump to video/audio, etc. */
-	console.log(args.min);
-	console.log(args.current);
-	console.log(args.max);
-	console.log(args.speed);
-	console.log(args.percentX);
-	console.log(args.percentY);
+	console.log(args.min);			//maps to data-ss-min set in DOM
+	console.log(args.current);		//maps to current value between min and max
+	console.log(args.max);			//maps to data-ss-max set in DOM
+	console.log(args.speed);		//returns the speed
+	console.log(args.percentX);		//returns percentX of knob within track
+	console.log(args.percentY);		//returns percentY from origPos.y click/touch
 });
 ```
 
