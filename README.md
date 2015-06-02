@@ -8,7 +8,7 @@ You can view an interactive sample and accompanying article at http://derekknox.
 
 ##Code Example
 ```html
-<div class="scrubbing-speed-wrapper ss-spacer">
+<div class="scrubbing-speed-wrapper">
     <div class="scrubbing-speed-slider"
         data-ss-name="my-slider"
         data-ss-min="0"
