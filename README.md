@@ -54,3 +54,5 @@ ScrubbingSpeed.init('my-slider', function(args){
 
 ##Designed and Developed By
 Derek Knox | Braindrop Labs
+
+[@derekknox](https://twitter.com/derekknox)
