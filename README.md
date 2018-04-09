@@ -6,7 +6,7 @@ You can view an interactive sample and accompanying article at http://derekknox.
 
 ![Image](_assets/img/scrubbing-speed-sample.gif)
 
-##Code Example
+## Code Example
 ```html
 <div class="scrubbing-speed-wrapper">
     <div class="scrubbing-speed-slider"
@@ -28,7 +28,7 @@ ScrubbingSpeed.init('my-slider', function(args){
 });
 ```
 
-##License
+## License
 	
 	The MIT License (MIT)
 
@@ -52,7 +52,7 @@ ScrubbingSpeed.init('my-slider', function(args){
 	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 	SOFTWARE.
 
-##Designed and Developed By
+## Designed and Developed By
 Derek Knox | Braindrop Labs
 
 [@derekknox](https://twitter.com/derekknox)
